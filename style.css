@@ -1,3 +1,14 @@
 body {
     font-size: 15pt;
+    background-color: skyblue;
+    /**
+    background-image:url("imagen.jpg");
+    background-repeat:no-repeat;
+    background-position:right top;
+    */
+}
+h1{
+  text-align:center;
+  color:white;
+  margin-left: 40px;
 }
