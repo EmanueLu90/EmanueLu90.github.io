@@ -6,30 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Proyecto Mi Curriculum Vitae</title>
-    <!-- favicon <link rel="icon" type "image/x-icon" href "url"-->
-  
-  <!-- HTML -->
+    <!-- favicon <link rel="icon" type "image/x-icon" href "url"
+    
+    <meta property="og:title" content="titulo"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="url"/>
+    <meta property="og:imagen" content="url imagen"/>
+    <meta property="og:descripcion" content="mi curriculum vitae"/>
+    
+    -->
+    
+    
+    <!-- HTML -->
   
 
   <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Estilo de Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   
   </head>
 
   <body>
-    <h1>"Mi Proyecto Final Front End"</h1>
-    <h2>Mi Curriculum Vitae Web</h2>
-	  <p>Mi nombre es <strong>Emanuel Fraile</strong> y soy el desarrollador de este proyecto integrador de front end</p></p>
-	  <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Mi Foto De Perfil">
-	  <aside>
-	    <h3>"Mis Redes Sociales"</h3>
-		  <p>  
-		    <a href="url">facebook </a><a href="url">twitter </a><a href="url">instagram</a>
-		 </p>   
-		</aside>
-		<article>  
-	    <h4>"Datos Personales"</h4>
-		  <p> 
+    <div id="contenedor">
+      <div id="cabecera">
+        <h1>"Mi Proyecto Final Front End"</h1>
+        <h2>Mi Curriculum Vitae Web</h2>
+        <hr/>
+        <button type "button" id="boton"> Hacer click aqui</button>
+        <button type "button" id="boton_color"> cambiar color de fondo</button>
+      </div>
+      <div id="contenido">
+	      <p>Mi nombre es <strong>Emanuel Luciano Fraile</strong>, y soy el desarrollador de este proyecto integrador de <em>Front End</em></p>
+	      <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Mi Foto De Perfil">
+	      <hr/>
+	      <h3>"Mis Redes Sociales"</h3>
+		    <p>
+		      <a href="url">Facebook</a> <a href="url">Twitter</a> <a href="url">Instagram</a>
+		    </p>   
+		    <hr/>
+	      <h4>"Datos Personales"</h4>
+		    <p> 
 		    <main>
 			    <ul>
 				    <li id="Nombre y Apellido">Nombre y Apellido</li>
@@ -37,23 +57,28 @@
 				    <li id="Fecha de Nacimiento">Fecha de Nacimiento</li>
 				    <li id="Direccion">Direccion</li>
 				    <li id="Telefono">Telefono</li>
-				    <li id="Email">Email</li>
+				    <li id="Email">Mi Correo Electronico 
+		          <a href="mailto: nombre@hotmail.com">Email</a>
+		        </li>
 				    <li id="Nacionalidad, Ciudad de Origen">Nacionalidad</li>
 				    <li id="Dni">Dni</li>
 				    <li id="Estado Civil">Estado Civil</li>
 				    <li id="Disponibilidad Horaria">Disponibilidad Horaria</li>
 			    </ul>
 		    </main>
-		  </p>
-		  <h5>Formacion Academica</h5>
-		  <p>termine el secundario en el colegio normal justo jose de urquiza, rio cuarto, córdoba
-		  en el año 2007
-		  
-		  y tuve un año de paso por la unrc, universidad nacional de rio cuarto, en la carrera de analista de sistemas, pero termine dejando.</p>
-		  <h6>Experiencia Laboral</h6>
-		  <p>Actualmente estoy trabajando en una empresa de limpieza desde octubre del 2019, tres años y medio</p>
-		</article>  
+		    </p>
+		    <hr/>
+		    <h5>Formacion Academica</h5>
+		    <p>termine el secundario en el colegio <em>normal justo jose de urquiza, rio cuarto, córdoba</em>
+		      en el año 2007<br/>
+		      y tuve un año de paso por la<em> (UNRC) Universidad Nacional de Rio Cuarto</em></br>
+		      en la carrera de analista de sistemas, pero termine dejando la carrera.</p>
+		    <hr/>
+		    <h6>Experiencia Laboral</h6>
+		    <p>Actualmente estoy trabajando en una empresa de limpieza desde octubre del 2019, tres años y medio</p>
+		  </div>
+		</div>  
   <!-- Project -->
     <script src="main.js"></script>
   </body>
-</html>
+</html>   

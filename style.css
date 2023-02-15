@@ -1,5 +1,9 @@
+*{
+  font-family: 'Playfair Display', serif;
+  box-sizing: borde-box;
+}
 body {
-    font-size: 15pt;
+    font-size: 10pt;
     background-color: skyblue;
     /**
     background-image:url("imagen.jpg");
@@ -11,4 +15,10 @@ h1{
   text-align:center;
   color:white;
   margin-left: 40px;
+  font-size: 20pt;
 }
+#contenedor {background-color: violet;}
+#cabecera {background-color: red;}
+#contenido {background-color: yellow;}
+
+contenedor{background-color:red;}
