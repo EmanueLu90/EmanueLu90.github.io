@@ -8,14 +8,14 @@ fetch('https:randomuser.me/api/?exc=login')
 const mostrarData = (data) => {
     console.log(data);
     let obj = data.results[0];
-    document.getElementById("nombre").innerHTML ='Nombre y Apellido: '+obj.name.first+', '+obj.name.last+'.';
-    document.getElementById("hombreMujer").innerHTML = 'Genero: '+obj.gender+'.';
-    document.getElementById("edad").innerHTML ='Edad: '+obj.dob.age+' años.';
-    document.getElementById("fechaNacimiento").innerHTML = 'Fecha de Nacimiento: '+obj.dob.date+'.';
-    document.getElementById("direccion").innerHTML = 'Direccion: '+obj.location.street.name+', Numero: '+obj.location.street.number+'.';
-    document.getElementById("ciudad").innerHTML ='Ciudad: '+obj.location.city+', '+obj.location.state+', '+obj.location.country+'.';
-    document.getElementById("telefono").innerHTML = 'Telefono Celular: '+obj.cell+'.';
-    document.getElementById("email").innerHTML = 'Email: '+obj.email+'.';
+    document.getElementById("nombre").innerHTML ='<i class="fa fa-user-circle-o" aria-hidden="true"></i> Nombre y Apellido: '+obj.name.first+', '+obj.name.last+'.';
+    document.getElementById("hombreMujer").innerHTML = '<i class="fa fa-venus-mars" aria-hidden="true"></i> Genero: '+obj.gender+'.';
+    document.getElementById("edad").innerHTML ='<i class="fa fa-heartbeat" aria-hidden="true"></i> Edad: '+obj.dob.age+' años.';
+    document.getElementById("fechaNacimiento").innerHTML = '<i class="fa fa-birthday-cake" aria-hidden="true"></i> Fecha de Nacimiento: '+obj.dob.date+'.';
+    document.getElementById("direccion").innerHTML = '<i class="fa fa-home" aria-hidden="true"></i> Direccion: '+obj.location.street.name+', Numero: '+obj.location.street.number+'.';
+    document.getElementById("ciudad").innerHTML ='<i class="fa fa-flag" aria-hidden="true"></i> Ciudad: '+obj.location.city+', '+obj.location.state+', '+obj.location.country+'.';
+    document.getElementById("telefono").innerHTML = '<i class="fa fa-phone" aria-hidden="true"></i> Telefono Celular: '+obj.cell+'.';
+    document.getElementById("email").innerHTML = '<i class="fa fa-at" aria-hidden="true"></i> Email: '+obj.email+'.';
     document.getElementById("fotografia").innerHTML = obj.picture.large;
 }
 
@@ -30,7 +30,7 @@ const mostrarData = (data) => {
 
 
 
-
+/*
 document.getElementById('boton').onclick = function () {
 	console.log("capturamos el evento click");
 	document.getElementById('demo').innerHTML = "estamos probando nuestro evento js";

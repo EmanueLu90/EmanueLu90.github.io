@@ -35,6 +35,11 @@
     width: 20%;
     float:left;
 }
+
+ul{
+  list-style: none;
+  
+}
 .seccion {
     background-color: #fff;
     text-align:center;
