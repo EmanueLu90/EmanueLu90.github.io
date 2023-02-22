@@ -1,24 +1,104 @@
 *{
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
   font-family: 'Playfair Display', serif;
-  box-sizing: borde-box;
+  color:#aaaaaa 
+  /**color letras*/
 }
-body {
-    font-size: 10pt;
-    background-color: skyblue;
-    /**
-    background-image:url("imagen.jpg");
-    background-repeat:no-repeat;
-    background-position:right top;
-    */
-}
-h1{
-  text-align:center;
-  color:white;
-  margin-left: 40px;
-  font-size: 20pt;
-}
-#contenedor {background-color: violet;}
-#cabecera {background-color: red;}
-#contenido {background-color: yellow;}
 
-contenedor{background-color:red;}
+  
+  
+
+    
+  body{background:#ededed; 
+}
+  
+
+.cabecera {
+    background-color:#e5e5e5;
+    text-align:center;
+    padding: 25px;
+    margin:10px;
+    
+    width: 100%;
+  
+    
+
+  }
+.navegador{
+    background-color: #fff;
+    text-align:center;
+    padding: 25px;
+    margin :10px;
+    
+    width: 20%;
+    float:left;
+}
+.seccion {
+    background-color: #fff;
+    text-align:center;
+    padding: 25px;
+    margin :10px;
+    
+    
+    width:50%;
+    float:left;
+  
+}
+.foto{
+  border-radius 50%;
+  width: 100%;
+}
+.derecha{
+    background-color: #fff;
+    text-align:center;
+    padding: 25px;
+    margin :10px;
+    
+    width:20%;
+    float:left;
+  
+
+}
+.articulo {
+    background-color: #fff;
+    text-align:center;
+    padding: 25px;
+    margin :10px;
+    
+    width:100%;
+    float:left;
+    
+}
+.pie {
+    background-color: #fff;
+    text-align:center;
+    padding: 25px;
+    margin :10px;
+    
+    width:100%;
+    float:left;
+}
+
+.datosPersonales{}
+
+
+/** media quaries para tablets*/
+ @media only screen and ( max-width : 620px){
+    .seccion{  
+      width : 80%;
+      padding: 0px;
+    }
+    .derecha{
+      width:100px
+    }
+  }
+ 
+ /** media quaries para celulares*/
+  @media only screen and ( max-width : 500px){
+    .navegador,.seccion,.derecha,.articulo,.pie{
+        width : 100%;
+        margin:5px;
+    }
+  }

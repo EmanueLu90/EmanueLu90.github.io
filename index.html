@@ -1,84 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Proyecto Mi Curriculum Vitae</title>
-    <!-- favicon <link rel="icon" type "image/x-icon" href "url"
-    
-    <meta property="og:title" content="titulo"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="url"/>
-    <meta property="og:imagen" content="url imagen"/>
-    <meta property="og:descripcion" content="mi curriculum vitae"/>
-    
-    -->
-    
-    
-    <!-- HTML -->
-  
+  <title>Curriculum</title>
+  <link rel="icon"type="image/x-icon"href="<i class="fa-solid fa-code"></i>"
+
+  <!-- HTML -->
+
 
   <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Estilo de Fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  
-  </head>
+  <link rel="stylesheet" href="style.css">
 
-  <body>
-    <div id="contenedor">
-      <div id="cabecera">
-        <h1>"Mi Proyecto Final Front End"</h1>
-        <h2>Mi Curriculum Vitae Web</h2>
-        <hr/>
-        <button type "button" id="boton"> Hacer click aqui</button>
-        <button type "button" id="boton_color"> cambiar color de fondo</button>
+  <!-- Estilo de Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div>
+    <header class="cabecera">
+      <em>cabecera</em>
+      <h1>mi titulo principal</h1>
+    </header>
+  </div>
+
+  <div style="overflow:auto">
+    <nav class="navegador">
+      <em>navegador</em>
+      <h3>Menu Interactivo</h3>
+      &nbsp;
+      <ul>
+        <li>
+          <div>
+            <button type "button" id="boton_api">Perfil Random</button>
+          </div>
+        </li>
+        <li>
+          <div>
+          <button type "button" id="boton_admin">Perfil Desarrollador</button>
+          </div>
+        </li>
+        <li>
+          <div>
+            <button type "button" id="boton_invitado">Crea tu Perfil</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="seccion">
+      <em>seccion</em>
+      <h2>Mi Curriculum Vitae Web</h2>
+      &nbsp;
+      <div>
+        <h3>Mis Redes Sociales</h3>
+        <p>
+          <a href="https://m.facebook.com/100063617648329/">Facebook</a> 
+          <a href="url">Twitter</a> <a href="url">Instagram</a>
+        </p>
       </div>
-      <div id="contenido">
-	      <p>Mi nombre es <strong>Emanuel Luciano Fraile</strong>, y soy el desarrollador de este proyecto integrador de <em>Front End</em></p>
-	      <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Mi Foto De Perfil">
-	      <hr/>
-	      <h3>"Mis Redes Sociales"</h3>
-		    <p>
-		      <a href="url">Facebook</a> <a href="url">Twitter</a> <a href="url">Instagram</a>
-		    </p>   
-		    <hr/>
-	      <h4>"Datos Personales"</h4>
-		    <p> 
-		    <main>
-			    <ul>
-				    <li id="Nombre y Apellido">Nombre y Apellido</li>
-				    <li id="edad">Edad</li>
-				    <li id="Fecha de Nacimiento">Fecha de Nacimiento</li>
-				    <li id="Direccion">Direccion</li>
-				    <li id="Telefono">Telefono</li>
-				    <li id="Email">Mi Correo Electronico 
-		          <a href="mailto: nombre@hotmail.com">Email</a>
-		        </li>
-				    <li id="Nacionalidad, Ciudad de Origen">Nacionalidad</li>
-				    <li id="Dni">Dni</li>
-				    <li id="Estado Civil">Estado Civil</li>
-				    <li id="Disponibilidad Horaria">Disponibilidad Horaria</li>
-			    </ul>
-		    </main>
-		    </p>
-		    <hr/>
-		    <h5>Formacion Academica</h5>
-		    <p>termine el secundario en el colegio <em>normal justo jose de urquiza, rio cuarto, córdoba</em>
-		      en el año 2007<br/>
-		      y tuve un año de paso por la<em> (UNRC) Universidad Nacional de Rio Cuarto</em></br>
-		      en la carrera de analista de sistemas, pero termine dejando la carrera.</p>
-		    <hr/>
-		    <h6>Experiencia Laboral</h6>
-		    <p>Actualmente estoy trabajando en una empresa de limpieza desde octubre del 2019, tres años y medio</p>
-		  </div>
-		</div>  
+      &nbsp;
+      <div class="foto">
+      <img src= "fotografia" alt="Foto De Perfil">
+      </div>
+      &nbsp;
+      <div class=datosPersonales>
+        <h3>Datos Personales</h3>
+        &nbsp;
+        <p>
+        <main>
+          <ul>
+            <li id="nombre">Nombre
+            </li>
+            <li id="hombreMujer">Genero</li>
+            <li id="edad">Edad</li>
+            <li id="fechaNacimiento">Fecha de Nacimiento</li>
+            <li id="direccion">Direccion</li>
+            <li id="ciudad">Ciudad</li>
+            <li id="telefono">Telefono</li>
+            <li id="email">Mi Correo Electronico</li>
+          </ul>
+        </main>
+        </p>
+      </div>
+      &nbsp;
+      <div>
+        <h3>Formacion Academica</h3>
+        &nbsp;
+        <p>termine el secundario en el colegio <em>normal justo jose de urquiza, rio cuarto, córdoba</em>
+        en el año 2007<br />
+        y tuve un año de paso por la<em> (UNRC) Universidad Nacional de Rio Cuarto</em></br>
+        &nbsp;
+        en la carrera de analista de sistemas, pero termine dejando la carrera.</p>
+        &nbsp;
+        <h3>Experiencia Laboral Habilidades</h3>
+        &nbsp;
+        <p>Actualmente estoy trabajando en una empresa de limpieza desde octubre del 2019, tres años y medio</p>
+      </div>
+    </section>
+
+    <aside class="derecha">
+      <em>Costado Derecho</em>
+      <h3>Agradecimientos</h3>
+      &nbsp;
+      <p>ticmas argentina programa 
+      </p>
+    </aside>
+
+  </div>
+
+  <div>
+    <article class="articulo">
+      <h3><em>Articulo Recursos</em></h3>
+      &nbsp;
+      <p>Recursos Utilizados ejemplo fuente letra iconos etc
+      </p>
+   </article>
+  </div>
+
+  <div>
+    <footer class="pie">
+      <em>pie de pagina</em>
+      <h3>fuentes usadas</h3>
+      &nbsp;
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_page"> w3schools HTML responsive page
+      </a>
+      <a href="https://www.youtube.com/watch?v=G-j5SI7Qitk"> Fetch - Javascript - como mostrar datos desde una Api </a>
+    </footer>
+  </div>
+
   <!-- Project -->
-    <script src="main.js"></script>
-  </body>
-</html>   
+  <script src="main.js"></script>
+</body>
+</html>
+   
