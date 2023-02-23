@@ -16,7 +16,7 @@ const mostrarData = (data) => {
     document.getElementById("ciudad").innerHTML ='<i class="fa fa-flag" aria-hidden="true"></i> Ciudad: '+obj.location.city+', '+obj.location.state+', '+obj.location.country+'.';
     document.getElementById("telefono").innerHTML = '<i class="fa fa-phone" aria-hidden="true"></i> Telefono Celular: '+obj.cell+'.';
     document.getElementById("email").innerHTML = '<i class="fa fa-at" aria-hidden="true"></i> Email: '+obj.email+'.';
-    document.getElementById("fotografia").innerHTML = obj.picture.large;
+    document.getElementById("fotografia").innerHTML = '<img src='+obj.picture.large+' alt=foto de perfil>';
 }
 
 
