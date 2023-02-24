@@ -7,7 +7,7 @@
   /**color letras*/
 }
 
-  
+
   
 
     
@@ -51,8 +51,14 @@ ul{
     float:left;
   
 }
-.foto{
-  border-radius 50%;
+
+#nombre,#hombreMujer,#edad,#fechaNacimiento,#direccion,#ciudad,#telefono,#email{
+    font-size: 110%;
+}
+
+
+#fotografia{
+  border-radius: 50%;
   width: 100%;
 }
 .derecha{
