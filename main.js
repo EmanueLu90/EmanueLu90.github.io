@@ -11,7 +11,8 @@ const mostrarData = (data) => {
     let obj = data.results[0];
     let seed= data.info.seed;
     
-    document.getElementById("semilla").innerHTML ="https://randomuser.me/api/?seed="+seed;
+    document.getElementById("semilla").innerHTML ="<a href= https://randomuser.me/api/?seed="+seed+"> semilla url </a>";
+    
     document.getElementById("nombre").innerHTML ='<i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i> Nombre y Apellido: '+obj.name.first+', '+obj.name.last+'.';
     document.getElementById("hombreMujer").innerHTML = '<i class="fa fa-venus-mars fa-lg" aria-hidden="true"></i> Genero: '+obj.gender+'.';
     document.getElementById("edad").innerHTML ='<i class="fa fa-heartbeat fa-lg" aria-hidden="true"></i> Edad: '+obj.dob.age+' años.';
