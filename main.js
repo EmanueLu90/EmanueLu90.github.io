@@ -23,9 +23,28 @@ const mostrarData = (data) => {
     document.getElementById("fotografia").innerHTML = '<img src='+obj.picture.large+' alt=foto de perfil>';
 }
 
-if (hombreMujer='male'){
-document.getElementById("hombreMujer").innerHTML = document.body.seccion.style.backgroundColor= '#FF0000' ;}
 
+
+
+
+
+
+
+/* pestañia ejemplo acordeon sacado de w3schools*/
+var acc = document.getElementsByClassName("pestania");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    var pestaniaAbrir = this.nextElementSibling;
+    if (pestaniaAbrir.style.display === "block") {
+      pestaniaAbrir.style.display = "none";
+    } else {
+      pestaniaAbrir.style.display = "block";
+    }
+  });
+}
 
 
 
