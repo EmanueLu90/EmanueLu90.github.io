@@ -3,8 +3,8 @@
   margin:0px;
   padding:0px;
   font-family:'Playfair Display',serif;
-  color:#aaaaaa 
   /**color letras*/
+  color:#aaaaaa
 }
 
 
@@ -31,9 +31,11 @@
     text-align:center;
     padding: 25px;
     margin :10px;
+    font-size: 100%;
     
     width: 20%;
     float:left;
+    
 }
 
 

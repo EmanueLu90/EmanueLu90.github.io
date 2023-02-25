@@ -1,12 +1,16 @@
 console.log('hola mundo');
 
+/* Funciones*/
+
+
+/* funcion que muestra los datos recogidos de la api json de random user*/
+
 fetch('https:randomuser.me/api/?exc=login')
       .then(response => response.json())
       .then(data => mostrarData(data))
       .catch(error => console.log(error))
 
-
-const mostrarData = (data) => {
+  const mostrarData = (data) => {
     console.log(data);
     let obj = data.results[0];
     let seed= data.info.seed;
@@ -32,7 +36,7 @@ document.getElementById('boton_admin').addEventListener('click', function() {
 }*/
 
 
-/* pestañia ejemplo acordeon sacado de w3schools*/
+/* funcion pestaña ejemplo acordeon sacado de w3schools*/
 var acc = document.getElementsByClassName("pestania");
 var i;
 
@@ -57,7 +61,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-/* CODIGO REFERENCIA DE CLASES DE UNIDAD JAVASCRIPT UTILIZADO POR PARTES
+/* CODIGO REFERENCIA DE CLASES DE UNIDAD JAVASCRIPT REUTILIZADO POR PARTES
 
 
 
