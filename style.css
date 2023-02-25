@@ -35,6 +35,12 @@
     width: 20%;
     float:left;
 }
+.menu{
+    text-align:left;
+}
+
+
+
 
 ul{
   list-style: none;
