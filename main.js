@@ -25,9 +25,10 @@ const mostrarData = (data) => {
 
 
 
-
-
-
+/*
+document.getElementById('boton_admin').addEventListener('click', function() {
+      document.getElementById("email").innerHTML = "cambia msj";
+}*/
 
 
 /* pestañia ejemplo acordeon sacado de w3schools*/
