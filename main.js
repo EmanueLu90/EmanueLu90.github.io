@@ -6,12 +6,12 @@ fetch('https:randomuser.me/api/?exc=login')
       .catch(error => console.log(error))
 
 
-
-
 const mostrarData = (data) => {
     console.log(data);
     let obj = data.results[0];
+    let seed= data.info.seed;
     
+    document.getElementById("semilla").innerHTML ="https://randomuser.me/api/?seed="+seed;
     document.getElementById("nombre").innerHTML ='<i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i> Nombre y Apellido: '+obj.name.first+', '+obj.name.last+'.';
     document.getElementById("hombreMujer").innerHTML = '<i class="fa fa-venus-mars fa-lg" aria-hidden="true"></i> Genero: '+obj.gender+'.';
     document.getElementById("edad").innerHTML ='<i class="fa fa-heartbeat fa-lg" aria-hidden="true"></i> Edad: '+obj.dob.age+' años.';
@@ -56,7 +56,11 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-/*
+/* CODIGO REFERENCIA DE CLASES DE UNIDAD JAVASCRIPT UTILIZADO POR PARTES
+
+
+
+
 document.getElementById('boton').onclick = function () {
 	console.log("capturamos el evento click");
 	document.getElementById('demo').innerHTML = "estamos probando nuestro evento js";
