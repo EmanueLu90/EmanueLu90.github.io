@@ -5,7 +5,8 @@ console.log('hola mundo');
 
 /* funcion que muestra los datos recogidos de la api json de random user*/
 
-fetch('https:randomuser.me/api/?exc=login')
+function mostrar(url){
+fetch(url)
       .then(response => response.json())
       .then(data => mostrarData(data))
       .catch(error => console.log(error))
@@ -26,8 +27,11 @@ fetch('https:randomuser.me/api/?exc=login')
     document.getElementById("telefono").innerHTML = '<i class="fa fa-phone fa-lg" aria-hidden="true"></i> Telefono Celular: '+obj.cell+'.';
     document.getElementById("email").innerHTML = '<i class="fa fa-at fa-lg" aria-hidden="true"></i> Email: '+obj.email+'.';
     document.getElementById("fotografia").innerHTML = '<img src='+obj.picture.large+' alt=foto de perfil>';
-}
+}}
 
+mostrar('https:randomuser.me/api/?exc=login');
+
+/*mostrar('https://randomuser.me/api/?seed=3f4390305d2e7e22');*/
 
 
 /*
