@@ -35,9 +35,6 @@
     width: 20%;
     float:left;
 }
-.menu{
-    text-align:left;
-}
 
 
 
@@ -90,12 +87,13 @@ ul{
 }
 .pestaniaAbrir{
 display:none; 
+text-align: left;
 
 background-color: #eee;
 color: #444;
 transition: 0.4s;
 }
-.active{background-color:#ccc;}
+
 
 
 .pie {
