@@ -90,20 +90,11 @@ ul{
   
 /** media quaries para tablets*/
  @media only screen and ( max-width : 622px){
-   .navegador{
+   .navegador, .seccion,.derecha{
       width:100%;
       height:auto;
-   }
-    .seccion{  
-      width : 100%;
-      padding: 0px;
-      height:auto;
-    }
-    .derecha{
-      width:100px;
-      height:auto;
-    }
   }
+ }
  
 
 
