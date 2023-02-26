@@ -3,7 +3,7 @@ console.log('hola mundo');
 /* Funciones*/
 
 
-/* funcion que muestra los datos recogidos de la api json de random user*/
+/* funcion que muestra los datos recogidos de la api json de random user
 
 function mostrar(url){
 fetch(url)
@@ -16,7 +16,7 @@ fetch(url)
     let obj = data.results[0];
     let seed= data.info.seed;
     
-    /*document.getElementById("semilla").innerHTML ="<a href= https://randomuser.me/api/?seed="+seed+"> semilla url </a>";*/
+    /*document.getElementById("semilla").innerHTML ="<a href= https://randomuser.me/api/?seed="+seed+"> semilla url </a>";
     
     document.getElementById("nombre").innerHTML ='<i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i> Nombre y Apellido: '+obj.name.first+', '+obj.name.last+'.';
     document.getElementById("hombreMujer").innerHTML = '<i class="fa fa-venus-mars fa-lg" aria-hidden="true"></i> Genero: '+obj.gender+'.';
@@ -32,13 +32,14 @@ fetch(url)
 /*inicializo la funcion mostrar cv random de la api
 mostrar('https:randomuser.me/api/?exc=login');*/
 
-/*por medio del boton perfil random recarga el perfil por uno nuevo*/
+/*por medio del boton perfil random recarga el perfil por uno nuevo
+
 document.getElementById('boton_api').addEventListener('click', function() {
   mostrar('https:randomuser.me/api/?exc=login');
   /*document.body.style.backgroundColor= 'blue';
   document.nombre.style.display='none';
-*/
-});
+
+});*/
 
 /*Json con datos del desarrollador*/
 
