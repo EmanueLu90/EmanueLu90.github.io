@@ -28,10 +28,32 @@ fetch(url)
     document.getElementById("email").innerHTML = '<i class="fa fa-at fa-lg" aria-hidden="true"></i> Email: '+obj.email+'.';
     document.getElementById("fotografia").innerHTML = '<img src='+obj.picture.large+' alt=foto de perfil>';
 }}
-
-mostrar('https:randomuser.me/api/?exc=login');
+/*mostrar('https:randomuser.me/api/?exc=login')*/
 
 /*mostrar('https://randomuser.me/api/?seed=3f4390305d2e7e22');*/
+
+
+const datosDesarrollador = {"results":[{"gender":"Masculino","name":{"first":"Emanuel","last":"Fraile"},"location":{"street":{"number":7756,"name":"Fantasia"},"city":"Rio Cuarto","state":"Cordoba","country":"Argentina"},"email":"emanuel.f@example.com","dob":{"date":"1990-05-31","age":32},"cell":"(557)-261-7416","picture":{"large":"https://randomuser.me/api/portraits/men/15.jpg"}}]}
+JSON.stringify(datosDesarrollador);
+
+function mostrarData2(data2){
+    console.log(data2);
+    let obj = data2.results[0];
+    document.getElementById("nombre").innerHTML = '<i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i> Nombre y Apellido: ' + obj.name.first + ', ' + obj.name.last + '.';
+    document.getElementById("hombreMujer").innerHTML = '<i class="fa fa-venus-mars fa-lg" aria-hidden="true"></i> Genero: ' + obj.gender + '.';
+    document.getElementById("edad").innerHTML = '<i class="fa fa-heartbeat fa-lg" aria-hidden="true"></i> Edad: ' + obj.dob.age + ' años.';
+    document.getElementById("fechaNacimiento").innerHTML = '<i class="fa fa-birthday-cake fa-lg" aria-hidden="true"></i> Fecha de Nacimiento: ' + obj.dob.date + '.';
+    document.getElementById("direccion").innerHTML = '<i class="fa fa-home fa-lg" aria-hidden="true"></i> Direccion: ' + obj.location.street.name + ', Numero: ' + obj.location.street.number + '.';
+    document.getElementById("ciudad").innerHTML = '<i class="fa fa-flag fa-lg" aria-hidden="true"></i> Ciudad: ' + obj.location.city + ', ' + obj.location.state + ', ' + obj.location.country + '.';
+    document.getElementById("telefono").innerHTML = '<i class="fa fa-phone fa-lg" aria-hidden="true"></i> Telefono Celular: ' + obj.cell + '.';
+    document.getElementById("email").innerHTML = '<i class="fa fa-at fa-lg" aria-hidden="true"></i> Email: ' + obj.email + '.';
+    document.getElementById("fotografia").innerHTML = '<img src=' + obj.picture.large + ' alt=foto de perfil>';
+}
+
+
+mostrarData2(datosDesarrollador);
+
+
 
 
 /*
