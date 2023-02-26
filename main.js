@@ -28,7 +28,11 @@ fetch(url)
     document.getElementById("email").innerHTML = '<i class="fa fa-at fa-lg" aria-hidden="true"></i> Email: '+obj.email+'.';
     document.getElementById("fotografia").innerHTML = '<img src='+obj.picture.large+' alt=foto de perfil>';
 }}
-/*mostrar('https:randomuser.me/api/?exc=login')*/
+
+
+document.getElementById('boton_api').onclick =
+mostrar('https:randomuser.me/api/?exc=login');
+
 
 /*mostrar('https://randomuser.me/api/?seed=3f4390305d2e7e22');*/
 
@@ -50,9 +54,10 @@ function mostrarData2(data2){
     document.getElementById("fotografia").innerHTML = '<img src=' + obj.picture.large + ' alt=foto de perfil>';
 }
 
-
-mostrarData2(datosDesarrollador);
-
+document.getElementById('boton_admin').onclick =
+mostrar(' ');
+mostrarData2(datosDesarrollador)
+;
 
 
 
