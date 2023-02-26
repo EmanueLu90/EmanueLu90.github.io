@@ -36,7 +36,7 @@ mostrar('https:randomuser.me/api/?exc=login');
 document.getElementById('boton_api').addEventListener('click', function() {
   mostrar('https:randomuser.me/api/?exc=login');
   /*document.body.style.backgroundColor= 'blue';*/
-  document.nombre.display=none;
+  document.nombre.style.display='none';
 });
 
 /*Json con datos del desarrollador*/
@@ -62,7 +62,7 @@ function mostrarData2(data2){
 document.getElementById('boton_admin').addEventListener('click', function() {
   mostrarData2(datosDesarrollador);
   /*document.body.style.backgroundColor = 'red';*/
-  document.nombre.display=none;
+  document.nombre.style.display='none';
 });
 
 
