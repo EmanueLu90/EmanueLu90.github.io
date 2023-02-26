@@ -31,6 +31,10 @@ body{background:#ededed;
     float:left;
 }
 
+#ventana{
+  display:none;
+}
+
 ul{
   list-style: none;
   
@@ -79,16 +83,8 @@ ul{
 /*#nombre {color:red;
 }*/
 
-/** media quaries para celulares*/
-/*@media only screen and ( max-width : 500px){
-    .navegador,.seccion,.derecha,.articulo,.pie{
-        width : 100%;
-        margin:5px;
-        height:auto;
-    }
-  }*/
-  
-/** media quaries para tablets*/
+
+/** media quaries */
  @media only screen and ( max-width : 622px){
    .navegador, .seccion,.derecha{
       width:100%;
