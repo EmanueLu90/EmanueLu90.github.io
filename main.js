@@ -70,20 +70,6 @@ document.getElementById('boton_admin').addEventListener('click', function() {
 
 
 
-/* funcion pestaña ejemplo acordeon sacado de w3schools*/
-var acc = document.getElementsByClassName("pestania");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    var pestaniaAbrir = this.nextElementSibling;
-    if (pestaniaAbrir.style.display === "block") {
-      pestaniaAbrir.style.display = "none";
-    } else {
-      pestaniaAbrir.style.display = "block";
-    }
-  });
-}
 
 
 

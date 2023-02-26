@@ -7,14 +7,9 @@
   color:#aaaaaa
 }
 
-
-  
-
-    
-  body{background:#ededed; 
+body{background:#ededed; 
 }
   
-
 .cabecera {
     /*background-image:url('https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');*/
     background-color:#e5e5e5;
@@ -23,83 +18,51 @@
     margin:10px;
     
     width: 100%;
-  
-    
+}
 
-  }
 .navegador{
     background-color: #fff;
     text-align:left;
-    padding: 0px;
+    padding: 25px;
     margin :10px;
     font-size: 100%;
     
-    width: 10%;
+    width: 20%;
     float:left;
-    
-    
-    
 }
-
-
-
 
 ul{
   list-style: none;
   
 }
-.seccion {
+.seccion{
     background-color: #fff;
     text-align:center;
     padding: 25px;
     margin :10px;
     
-    
     width:50%;
     float:left;
-  
 }
 
 #nombre,#hombreMujer,#edad,#fechaNacimiento,#direccion,#ciudad,#telefono,#email,#semilla{
     font-size: 110%;
 }
 
-
 #fotografia{
   border-radius: 50%;
   width: 100%;
 }
+
 .derecha{
     background-color: #fff;
     text-align:center;
     padding: 25px;
     margin :10px;
     
-    width:30%;
+    width:20%;
     float:left;
 }
-
-
-.articulo {
-    background-color: #fff;
-    text-align:center;
-    padding: 25px;
-    margin :10px;
-    
-    width:100%;
-    float:left;
-    
-}
-.pestaniaAbrir{
-display:none; 
-text-align: left;
-
-background-color: #eee;
-color: #444;
-transition: 0.4s;
-}
-
-
 
 .pie {
     background-color: #fff;
