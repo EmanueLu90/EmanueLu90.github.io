@@ -80,13 +80,13 @@ ul{
 }*/
 
 /** media quaries para celulares*/
-@media only screen and ( max-width : 500px){
+/*@media only screen and ( max-width : 500px){
     .navegador,.seccion,.derecha,.articulo,.pie{
         width : 100%;
         margin:5px;
         height:auto;
     }
-  }
+  }*/
   
 /** media quaries para tablets*/
  @media only screen and ( max-width : 622px){
