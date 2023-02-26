@@ -42,6 +42,7 @@ document.getElementById('boton_api').addEventListener('click', function() {
 });*/
 
 /*Json con datos del desarrollador*/
+/*
 
 const datosDesarrollador = {"results":[{"gender":"Masculino","name":{"first":"Emanuel","last":"Fraile"},"location":{"street":{"number":7756,"name":"Fantasia"},"city":"Río Cuarto","state":"Córdoba","country":"Argentina"},"email":"emanuel.f@example.com","dob":{"date":"1990-05-31","age":32},"cell":"(557)-261-7416","picture":{"large":"https://randomuser.me/api/portraits/men/15.jpg"}}]}
 JSON.stringify(datosDesarrollador);
@@ -60,17 +61,18 @@ function mostrarData2(data2){
     document.getElementById("fotografia").innerHTML = '<img src=' + obj.picture.large + ' alt=foto de perfil>';
 }
 
-/* inicializo la funcion mostrar cv del desarrollador desde el comienzo*/
+/* inicializo la funcion mostrar cv del desarrollador desde el comienzo
  mostrarData2(datosDesarrollador);
 
-/*Funcion del boton que oculta el contenido del curriculum random de la api por la del desarrollador del proyecto*/
+/*Funcion del boton que oculta el contenido del curriculum random de la api por la del desarrollador del proyecto
 document.getElementById('boton_admin').addEventListener('click', function() {
   mostrarData2(datosDesarrollador);
   /*document.body.style.backgroundColor = 'red';
   document.nombre.style.display='none';
-*/
+
 });
 
+*/
 
 
 
