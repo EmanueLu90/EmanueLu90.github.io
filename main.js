@@ -29,8 +29,8 @@ fetch(url)
     document.getElementById("fotografia").innerHTML = '<img src='+obj.picture.large+' alt=foto de perfil>';
 }}
 
-/*inicializo la funcion mostrar cv random de la api*/
-mostrar('https:randomuser.me/api/?exc=login');
+/*inicializo la funcion mostrar cv random de la api
+mostrar('https:randomuser.me/api/?exc=login');*/
 
 /*por medio del boton perfil random recarga el perfil por uno nuevo*/
 
@@ -69,7 +69,6 @@ document.getElementById('boton_admin').addEventListener('click', function() {
   mostrarData2(datosDesarrollador);
   /*document.body.style.backgroundColor = 'red';*/
   document.nombre.style.display='none';
-
 });
 
 
