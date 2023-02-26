@@ -57,7 +57,7 @@ ul{
   
 }
 
-#nombre,#hombreMujer,#edad,#fechaNacimiento,#direccion,#ciudad,#telefono,#email{
+#nombre,#hombreMujer,#edad,#fechaNacimiento,#direccion,#ciudad,#telefono,#email,#semilla{
     font-size: 110%;
 }
 

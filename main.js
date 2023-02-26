@@ -35,8 +35,8 @@ mostrar('https:randomuser.me/api/?exc=login');
 /*por medio del boton perfil random recarga el perfil por uno nuevo*/
 document.getElementById('boton_api').addEventListener('click', function() {
   mostrar('https:randomuser.me/api/?exc=login');
-  document.body.style.backgroundColor = '';
-  document.nombre.style.display = 'none';
+  document.body.style.backgroundColor= '';
+  document.nombre.style.display='none';
 });
 
 /*Json con datos del desarrollador*/
