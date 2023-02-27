@@ -94,21 +94,12 @@ if (panel.style.display=='block') {
 }
 
 
-
-
-
-
-
-
-
-
-
+document.getElementById('boton_color').addEventListener('click', function () {
+	document.body.style.backgroundColor = '#b5c5ca';
+});
 
 
 /* CODIGO REFERENCIA DE CLASES DE UNIDAD JAVASCRIPT REUTILIZADO POR PARTES
-
-
-
 
 document.getElementById('boton').onclick = function () {
 	console.log("capturamos el evento click");
