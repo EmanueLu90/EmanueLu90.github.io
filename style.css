@@ -30,6 +30,9 @@ body{background:#ededed;
     width: 20%;
     float:left;
 }
+.articulo{
+    display:none;
+}
 
 #ventana{
   display:none;
