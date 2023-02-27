@@ -9,7 +9,7 @@ console.log('hola mundo');
 fetch('https:randomuser.me/api/?exc=login')
       .then(response => response.json())
       .then(data => mostrarData(data))
-      .catch(error => console.log(error))
+      /*.catch(error => console.log(error))*/
 
   const mostrarData = (data) => {
     console.log(data);
