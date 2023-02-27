@@ -21,7 +21,7 @@ body{background:#ededed;
 }
 
 .navegador{
-    background-color: #fff;
+    background-color: #ededed;
     text-align:left;
     padding: 25px;
     margin :10px;
@@ -33,6 +33,7 @@ body{background:#ededed;
 
 #ventana{
   display:none;
+  background-color:#e5e5e5;
 }
 
 #ventanaDos{
@@ -73,7 +74,7 @@ ul{
 }
 
 .pie {
-    background-color: #fff;
+    background-color: #ededed;
     text-align:center;
     padding: 25px;
     margin :10px;
@@ -82,12 +83,6 @@ ul{
     float:left;
 }
 
-.datosPersonales{}
-
-/*#nombre {color:red;
-}*/
-
-
 /** media quaries */
  @media only screen and ( max-width : 622px){
    .navegador, .seccion,.derecha{
@@ -95,6 +90,3 @@ ul{
       height:auto;
   }
  }
- 
-
-
