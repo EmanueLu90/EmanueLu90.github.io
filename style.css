@@ -35,6 +35,10 @@ body{background:#ededed;
   display:none;
 }
 
+#ventanaDos{
+  display:none;
+}
+
 ul{
   list-style: none;
   
