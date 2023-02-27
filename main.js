@@ -68,7 +68,7 @@ function mostrarData2(data2){
 document.getElementById('boton_admin').addEventListener('click', function() {
   mostrarData2(datosDesarrollador);
   document.nombre.style.display='none';
-  /*document.articulo.style.display='block';*/
+  document.articulo.style.display='block';
 });
 
 
