@@ -29,8 +29,8 @@ fetch(url)
     document.getElementById("fotografia").innerHTML = '<img src='+obj.picture.large+' alt=foto de perfil>';
 }}
 
-/*inicializo la funcion mostrar cv random de la api
-mostrar('https:randomuser.me/api/?exc=login');*/
+/*inicializo la funcion mostrar cv random de la api*/
+mostrar('https:randomuser.me/api/?exc=login');
 
 /*por medio del boton perfil random recarga por uno nuevo*/
 
@@ -59,8 +59,8 @@ function mostrarData2(data2){
     document.getElementById("fotografia").innerHTML = '<img src=' + obj.picture.large + ' alt=foto de perfil>';
 }
 
-/* inicializo la funcion mostrar cv del desarrollador desde el comienzo*/
- mostrarData2(datosDesarrollador);
+/* inicializo la funcion mostrar cv del desarrollador desde el comienzo
+ mostrarData2(datosDesarrollador);*/
 
 
 /*Funcion del boton que oculta el contenido del curriculum random de la api por la del desarrollador del proyecto*/
@@ -70,7 +70,7 @@ document.getElementById('boton_admin').addEventListener('click', function() {
 });
 
 
-/* funcion ventana del menu*/
+/* ventana del menu*/
 document.getElementById ('botonVentana')
 .onclick = function () {
 let panel=this.nextElementSibling;
@@ -81,6 +81,17 @@ if (panel.style.display=='block') {
 }
 }
 
+
+/* ventana de agradecimientos*/
+document.getElementById ('botonVentanaDos')
+.onclick = function () {
+let panel=this.nextElementSibling;
+if (panel.style.display=='block') {
+  panel.style.display='none';
+} else {
+  panel.style.display='block';
+}
+}
 
 
 
