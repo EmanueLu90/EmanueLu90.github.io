@@ -6,7 +6,7 @@ console.log('hola mundo');
 /* funcion que muestra los datos recogidos de la api json de random user*/
 
 /*function mostrar(url){*/
-fetch('https:randomuser.me/api/?exc=login')
+fetch('https://randomuser.me/api/?exc=login')
       .then(response => response.json())
       .then(data => mostrarData(data))
       /*.catch(error => console.log(error))*/
