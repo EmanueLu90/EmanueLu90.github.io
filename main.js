@@ -6,7 +6,7 @@ console.log('hola mundo');
 /* funcion que muestra los datos recogidos de la api json de random user*/
 
 /*function mostrar(url){*/
-fetch(https:randomuser.me/api/?exc=login)
+fetch('https:randomuser.me/api/?exc=login')
       .then(response => response.json())
       .then(data => mostrarData(data))
       .catch(error => console.log(error))
@@ -59,8 +59,8 @@ function mostrarData2(data2){
     document.getElementById("fotografia").innerHTML = '<img src=' + obj.picture.large + ' alt=foto de perfil>';
 }
 
-/* inicializo la funcion mostrar cv del desarrollador desde el comienzo
- mostrarData2(datosDesarrollador);*/
+/* inicializo la funcion mostrar cv del desarrollador desde el comienzo*/
+ mostrarData2(datosDesarrollador);
 
 
 /*Funcion del boton que oculta el contenido del curriculum random de la api por la del desarrollador del proyecto*/
