@@ -5,11 +5,11 @@ console.log('hola mundo');
 
 /* funcion que muestra los datos recogidos de la api json de random user*/
 
-/*function mostrar(url){*/
-fetch('https://randomuser.me/api/?exc=login')
+function mostrar(url){
+fetch(url)
       .then(response => response.json())
       .then(data => mostrarData(data))
-      /*.catch(error => console.log(error))*/
+      .catch(error => console.log(error))
 
   const mostrarData = (data) => {
     console.log(data);
@@ -27,17 +27,17 @@ fetch('https://randomuser.me/api/?exc=login')
     document.getElementById("telefono").innerHTML = '<i class="fa fa-phone fa-lg" aria-hidden="true"></i> Telefono Celular: '+obj.cell+'.';
     document.getElementById("email").innerHTML = '<i class="fa fa-at fa-lg" aria-hidden="true"></i> Email: '+obj.email+'.';
     document.getElementById("fotografia").innerHTML = '<img src='+obj.picture.large+' alt=foto de perfil>';
-}/*}
+}}
 
-inicializo la funcion mostrar cv random de la api
-mostrar('https:randomuser.me/api/?exc=login');
+/*inicializo la funcion mostrar cv random de la api*/
+mostrar('https://randomuser.me/api/?exc=login');
 
-por medio del boton perfil random recarga por uno nuevo
+/*por medio del boton perfil random recarga por uno nuevo*/
 
 document.getElementById('boton_api').addEventListener('click', function() {
-  mostrar('https:randomuser.me/api/?exc=login');
+  mostrar('https://randomuser.me/api/?exc=login');
   document.nombre.style.display='none';
-}); */
+}); 
 
 
 /*Json con datos del desarrollador*/
