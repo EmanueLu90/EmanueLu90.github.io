@@ -37,7 +37,6 @@ mostrar('https://randomuser.me/api/?exc=login');
 document.getElementById('boton_api').addEventListener('click', function() {
   mostrar('https://randomuser.me/api/?exc=login');
   document.nombre.style.display='none';
-  document.articulo.style.display='none';
 }); 
 
 
@@ -68,7 +67,6 @@ function mostrarData2(data2){
 document.getElementById('boton_admin').addEventListener('click', function() {
   mostrarData2(datosDesarrollador);
   document.nombre.style.display='none';
-  document.articulo.style.display='block';
 });
 
 
